@@ -31,7 +31,7 @@ const routes = {
 };
 
 // Create the payment proxy with the pre-configured server
-export const middleware = paymentProxy(routes, server);
+export const proxy = paymentProxy(routes, server);
 
 export const config = {
     matcher: ["/api/fortune/:path*"],
